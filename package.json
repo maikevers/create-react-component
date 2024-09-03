@@ -1,0 +1,51 @@
+{
+  "name": "lightbulb-create-react-component",
+  "displayName": "Lightbulb Create React Component",
+  "description": "Quickly create React components via the lightbulb menu",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:typescriptreact"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.createReactComponent",
+        "title": "Create React Component"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "package": "vsce package",
+    "install-extension": "code --install-extension lightbulb-create-react-component-0.0.1.vsix"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.16",
+    "@types/vscode": "^1.60.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.1",
+    "@typescript-eslint/parser": "^7.0.1",
+    "eslint": "^8.56.0",
+    "glob": "^10.3.10",
+    "mocha": "^10.3.0",
+    "typescript": "^5.3.3",
+    "vsce": "^2.15.0"
+  },
+  "publisher": "MaikEvers",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maikevers/create-react-component.git"
+  }
+}
