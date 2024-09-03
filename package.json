@@ -2,7 +2,8 @@
   "name": "lightbulb-create-react-component",
   "displayName": "Lightbulb Create React Component",
   "description": "Quickly create React components via the lightbulb menu",
-  "version": "0.0.2",
+  "icon": "icon.png",
+  "version": "0.0.3",
   "engines": {
     "vscode": "^1.60.0"
   },
@@ -28,7 +29,7 @@
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
     "package": "vsce package",
-    "install-extension": "code --install-extension lightbulb-create-react-component-0.0.2.vsix"
+    "install-extension": "code --install-extension lightbulb-create-react-component-0.0.3.vsix"
   },
   "devDependencies": {
     "@types/glob": "^8.1.0",
